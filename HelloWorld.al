@@ -15,4 +15,11 @@ pageextension 50100 CustomerListExt extends "Customer List"
         Message('App published: Bye Bye world');
         Message('App published2: Bye Bye world');
     end;
+
+    trigger OnAfterGetRecord()
+    begin
+
+        Message('Mess on after');
+
+    end;
 }
